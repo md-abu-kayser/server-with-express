@@ -35,10 +35,7 @@ const updateUser = async (name: string, email: string, id: string) => {
 
 // delete user service
 const deleteUser = async (id: string) => {
-  const result = await pool.query(
-    `INSERT INTO todos(user_id, title) VALUES($1, $2) RETURNING *`,
-    [id]
-  );
+  const result = await pool.query(`DELETE FROM users WHERE id = $1`, [id]);
 
   return result;
 };
