@@ -1,3 +1,5 @@
+// server is ready:
+// ----------------------------------------->
 import app from "./app";
 import config from "./config";
 
