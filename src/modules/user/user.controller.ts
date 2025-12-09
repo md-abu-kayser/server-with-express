@@ -1,18 +1,17 @@
 import { Request, Response } from "express";
-import { pool } from "../../config/db";
 import { userServices } from "./user.service";
 
-// post user controller
 const createUser = async (req: Request, res: Response) => {
   try {
     const result = await userServices.createUser(req.body);
     // console.log(result.rows[0]);
     res.status(201).json({
       success: false,
-      message: "Data Inserted Successfully",
+      message: "Data Instered Successfully",
       data: result.rows[0],
     });
   } catch (err: any) {
+    console.log(err);
     res.status(500).json({
       success: false,
       message: err.message,
@@ -20,30 +19,28 @@ const createUser = async (req: Request, res: Response) => {
   }
 };
 
-// get users controller
 const getUser = async (req: Request, res: Response) => {
   try {
     const result = await userServices.getUser();
 
     res.status(200).json({
       success: true,
-      message: "Users retrieved Successfully",
+      message: "Users retrieved successfully",
       data: result.rows,
     });
   } catch (err: any) {
     res.status(500).json({
       success: false,
       message: err.message,
-      details: err,
+      datails: err,
     });
   }
 };
 
-// get single user controller
 const getSingleUser = async (req: Request, res: Response) => {
   // console.log(req.params.id);
   try {
-    const result = await userServices.getSingleUser(req.params.id as string);
+    const result = await userServices.getSingleuser(req.params.id as string);
 
     if (result.rows.length === 0) {
       res.status(404).json({
@@ -65,7 +62,6 @@ const getSingleUser = async (req: Request, res: Response) => {
   }
 };
 
-// update user controller
 const updateUser = async (req: Request, res: Response) => {
   // console.log(req.params.id);
   const { name, email } = req.body;
@@ -92,11 +88,10 @@ const updateUser = async (req: Request, res: Response) => {
   }
 };
 
-// delete user controller
 const deleteUser = async (req: Request, res: Response) => {
   // console.log(req.params.id);
   try {
-    const result = await userServices.deleteUser(req.params.id as string);
+    const result = await userServices.deleteUser(req.params.id!);
 
     if (result.rowCount === 0) {
       res.status(404).json({
