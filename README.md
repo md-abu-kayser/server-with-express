@@ -16,10 +16,6 @@ The code focuses on clean separation of concerns: routes → controllers → ser
 
 **Status**: Example / learning project (ready for extension or production hardening)
 
-**License**: ISC
-
-**Maintainer**: See repository owner
-
 **Quick Links**
 
 - Entry: `src/server.ts`
@@ -58,10 +54,15 @@ Follow these steps to get the project running locally on Windows PowerShell.
 1. Clone the repo and install dependencies:
 
 ```powershell
-git clone <repo-url>
-cd server-with-express
-npm install
+git clone https://github.com/md-abu-kayser/server-with-express.git
 ```
+
+````powershell
+cd server-with-express
+
+```powershell
+npm install
+````
 
 2. Create a `.env` file in the project root (see Environment variables).
 
@@ -188,6 +189,25 @@ Contributions are welcome. Good first tasks:
 
 Please open issues or PRs on the upstream repository.
 
-## License
+### License
 
-This project is licensed under the MIT License.
+- This project is licensed under the terms of the **[MIT License](./LICENSE)**.
+- You may replace or update the license as needed for client or proprietary projects.
+
+---
+
+### Contact and Maintainer
+
+- **_Name:_** Md Abu Kayser - Full-Stack Engineer
+- **_Project:_** _server-with-express_
+- **_Maintainer:_** [md-abu-kayser](https://github.com/md-abu-kayser)
+- **_GitHub:_** [github.com/abu.kayser-official](https://github.com/md-abu-kayser)
+- **_Email:_** [abu.kayser.official@gmail.com](mailto:abu.kayser.official@gmail.com)
+
+If you’d like this README tailored for a specific purpose - such as **hiring managers**, **open-source contributors**, or **client deliverables** - feel free to request a custom tone or format.
+
+---
+
+**Thank you for reviewing this project!**
+
+---
