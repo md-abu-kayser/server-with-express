@@ -1,4 +1,4 @@
-# Server With Express
+# Server With Express (TypeScript) - REST API Starter
 
 Professional, modular Node + TypeScript REST API built with Express and PostgreSQL.
 
@@ -12,7 +12,7 @@ This project is a concise but production-minded starter for building RESTful ser
 
 The code focuses on clean separation of concerns: routes → controllers → services → DB layer, and includes helpful middleware for logging and authorization.
 
-**Repository**: `server-with-express`
+**Repository**: `server-with-express-ts`
 
 **Status**: Example / learning project (ready for extension or production hardening)
 
@@ -54,11 +54,11 @@ Follow these steps to get the project running locally on Windows PowerShell.
 1. Clone the repo and install dependencies:
 
 ```powershell
-git clone https://github.com/md-abu-kayser/server-with-express.git
+git clone https://github.com/md-abu-kayser/server-with-express-ts.git
 ```
 
 ````powershell
-cd server-with-express
+cd server-with-express-ts
 
 ```powershell
 npm install
@@ -199,7 +199,7 @@ Please open issues or PRs on the upstream repository.
 ### Contact and Maintainer
 
 - **_Name:_** Md Abu Kayser - Full-Stack Engineer
-- **_Project:_** _server-with-express_
+- **_Project:_** _server-with-express-ts_
 - **_Maintainer:_** [md-abu-kayser](https://github.com/md-abu-kayser)
 - **_GitHub:_** [github.com/abu.kayser-official](https://github.com/md-abu-kayser)
 - **_Email:_** [abu.kayser.official@gmail.com](mailto:abu.kayser.official@gmail.com)
