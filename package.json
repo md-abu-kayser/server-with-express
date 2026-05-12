@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/md-abu-kayser/express-server/issues"
   },
-  "homepage": "https://github.com/md-abu-kayser/express-server#readme"
+  "homepage": "https://github.com/md-abu-kayser/express-server#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
