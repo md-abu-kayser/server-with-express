@@ -1,5 +1,5 @@
 {
-  "name": "express-server",
+  "name": "server-with-express",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/md-abu-kayser/express-server.git"
+    "url": "git+https://github.com/md-abu-kayser/server-with-express.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/md-abu-kayser/express-server/issues"
+    "url": "https://github.com/md-abu-kayser/server-with-express/issues"
   },
-  "homepage": "https://github.com/md-abu-kayser/express-server#readme",
+  "homepage": "https://github.com/md-abu-kayser/server-with-express#readme",
   "dependencies": {
     "express": "^5.2.1"
   },
